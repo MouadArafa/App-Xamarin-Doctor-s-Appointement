@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MasterDetailPages.Home">
+  <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition  Width="*" />
+    </Grid.ColumnDefinitions>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="0,50,0,0"  Grid.Row="0" Grid.Column="0">
+        <ImageButton x:Name="image5" Source="image.png" Clicked="ImageButton_Clicked_5"/>
+        <Label Text="Restaurations" HorizontalTextAlignment="Center" FontFamily="Arial" FontAttributes="Bold" FontSize="Large" TextColor="black" />
+    </StackLayout>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="0,50,0,0"  Grid.Row="0" Grid.Column="1">
+        <ImageButton x:Name="image1" Source="image2.png" Clicked="ImageButton_Clicked_1" />
+        <Label Text="L'odeur" HorizontalTextAlignment="Center" FontFamily="Arial" FontAttributes="Bold" FontSize="Large" TextColor="black" />
+    </StackLayout>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="0,50,0,0"  Grid.Row="1" Grid.Column="0">
+        <ImageButton x:Name="image2" Source="image3.png" Clicked="ImageButton_Clicked_2"  />
+        <Label Text="Blanchiment" HorizontalTextAlignment="Center" FontFamily="Arial" FontAttributes="Bold" FontSize="Large" TextColor="black" />
+    </StackLayout>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="0,50,0,0"  Grid.Row="1" Grid.Column="1" >
+        <ImageButton x:Name="image3" Source="image4.png" Clicked="ImageButton_Clicked_3"  />
+        <Label Text="L'extraction" HorizontalTextAlignment="Center" FontFamily="Arial" FontAttributes="Bold" FontSize="Large" TextColor="black" />
+    </StackLayout>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="0,50,0,0"  Grid.Row="2" Grid.Column="0">
+        <ImageButton x:Name="image4" Source="image5.png" Clicked="ImageButton_Clicked_4"  />
+        <Label Text="Scanner" HorizontalTextAlignment="Center" FontFamily="Arial" FontAttributes="Bold" FontSize="Large" TextColor="black" />
+    </StackLayout>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="StartAndExpand" Padding="0,50,0,0"  Grid.Row="2" Grid.Column="1">
+        <ImageButton x:Name="image6" Source="image6.png" Clicked="image6_Clicked"  />
+        <Label Text="Saignement" HorizontalTextAlignment="Center" FontFamily="Arial" FontAttributes="Bold" FontSize="Large" TextColor="black" />
+    </StackLayout>
+  </Grid>
+</ContentPage>

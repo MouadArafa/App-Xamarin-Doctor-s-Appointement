@@ -1,32 +1,26 @@
-﻿using App1.Services;
-using App1.Views;
-using System;
+﻿
+using App1.MasterDetailPages;
+using App1.Services;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
+ 
 namespace App1
 {
-    public partial class App : Application
+    public partial class App : Xamarin.Forms.Application
     {
 
         public App()
         {
             InitializeComponent();
+           
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+            MainPage = new Page2();
+        
+
+            
         }
 
-        protected override void OnStart()
-        {
-        }
 
-        protected override void OnSleep()
-        {
-        }
-
-        protected override void OnResume()
-        {
-        }
     }
 }

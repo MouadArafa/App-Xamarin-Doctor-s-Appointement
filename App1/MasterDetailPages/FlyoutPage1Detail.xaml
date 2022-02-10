@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MasterDetailPages.FlyoutPage1Detail"
+             Title="Detail"
+             IconImageSource="nav.ico">
+    <StackLayout Padding="10">
+        <Image Source="image1.jpg" WidthRequest="500"/>
+        <Label HorizontalOptions="Center" FontSize="Medium"  Text=" Les dents  ont un rôle dans la mastication , la déglutition et la phonation. Elles participent aussi largement à l'esthétique du visage . L'organe dentaire est constitué de la dent elle-même (émail, dentine, pulpe) et de son environnement parodontal ou parod (cément, desmodonte, os alvéolaire)."/>
+    </StackLayout>
+</ContentPage>
